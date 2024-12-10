@@ -58,6 +58,7 @@ def handle_goal():
     """
     This function will play the goal horn and change the color of the light.
     """
+    play_horn()
     original_color = bulb.get_color()
     print("Changing light color ")
     try:
@@ -65,7 +66,6 @@ def handle_goal():
     except:
         print("Error changing color")
     print("Waiting 20 seconds...")
-    play_horn()
     time.sleep(20)
     print("Changing light color back to original color")
     try:
